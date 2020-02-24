@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Login User Apps</string>
+    <string name="edit_text1">Enter Your Name</string>
+    <string name="edit_text2">Enter Your Department Name</string>
+    <string name="edit_text3">Enter Your Shift</string>
+    <string name="edit_text4">Enter Your Sex</string>
+    <string name="edit_text5">Enter Your Roll</string>
+    <string name="edit_text6">Enter Your Registration NO</string>
+    <string name="button1">Button</string>
+    <string name="print">Print</string>
+</resources>
