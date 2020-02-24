@@ -7,12 +7,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     EditText editText1,editText2,editText3,editText4,editText5,editText6;
+    CheckBox checkbox;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         editText4 = findViewById(R.id.editTextID4);
         editText5 = findViewById(R.id.editTextID5);
         editText6 = findViewById(R.id.editTextID6);
+        checkbox = findViewById(R.id.checkbox1);
 
         findViewById(R.id.btn1).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -93,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
                    intent.putExtra("str_key4",str3);
                    intent.putExtra("str_key5",str4);
                    intent.putExtra("str_key6",str5);
+                   intent.putExtra("boll",checkbox.isChecked());
                    startActivity(intent);
                 }
                 catch (ActivityNotFoundException e){
